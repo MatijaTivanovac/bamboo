@@ -1,0 +1,84 @@
+.branding
+  width: 1920px
+  height: 1080px
+  padding: 20px
+  background-color: $purple
+  background-image: url(../img/background1.png)
+  background-size: cover            
+  background-repeat: no-repeat
+  background-position: center center
+  box-shadow: inset 0 0 0 1000px rgba(59, 1, 59, 0.8)
+
+.branding__nav
+  display: flex
+  justify-content: space-around
+  align-items: center
+  flex-wrap: wrap
+
+.branding__nav--right
+  display: flex
+  align-items: center
+  a
+    color: white
+    font-size: 1.6em
+    font-weight: bolder
+    line-height: 250px
+    padding: 0 0 0 40px
+    &:hover
+      text-decoration: none
+      color: white
+
+.branding__nav--left
+  display: flex
+  justify-content: flex-end
+  ul
+    float: left
+    list-style-type: none
+    margin: 0
+    padding: 30px
+    li 
+      float: left
+      padding-left: 30px
+      a
+        display: block
+        color: white
+        padding: 10px 45px
+        font-size: 1.6em
+        font-weight: bolder
+        &:hover
+          text-decoration: none
+
+.branding__nav--decor-button
+  background-color: $yellow
+  border: none
+  border-radius: 60px
+  cursor: pointer
+
+.branding__text
+  width: 30%
+  p
+    color: white
+    font-size: 3em
+    text-align: left
+
+.branding__btn
+  border: 3px solid white
+  border-radius: 60px
+  display: inline-block
+  margin: 1.8em 1.3em 0 5em
+  color: white
+  padding: 10px 45px
+  font-size: 1.6em
+  font-weight: bolder
+  &:hover
+    text-decoration: none
+    color: white
+
+.branding__btn--color
+  background-color: $yellow
+  display: inline-block
+  margin-left: 1.2em
+  border: none
+  border-radius: 60px
+  padding: 15px 70px
+  cursor: pointer
