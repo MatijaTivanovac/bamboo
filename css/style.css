@@ -117,4 +117,37 @@ ul {
   ul li {
     float: left; }
 
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 5em 0;
+  width: 100%; }
+
+.cards__card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%; }
+  .cards__card1 p {
+    width: 90%;
+    font-size: 1.5em; }
+
+.cards__card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%; }
+  .cards__card2 p {
+    width: 90%;
+    font-size: 1.5em; }
+
+.cards__card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%; }
+  .cards__card3 p {
+    width: 90%;
+    font-size: 1.5em; }
+
 /*# sourceMappingURL=style.css.map */
