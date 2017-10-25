@@ -15,37 +15,45 @@
   align-items: center;
   flex-wrap: wrap; }
 
-.branding__nav--right {
+.branding__logo {
+  width: 300px;
+  height: 80px;
+  margin-top: -2rem;
+  margin-left: -8rem; }
+
+.branding__nav--left {
   display: flex;
+  justify-content: space-between;
   align-items: center; }
-  .branding__nav--right a {
+  .branding__nav--left a {
     color: white;
     font-size: 1.6em;
     font-weight: bolder;
     line-height: 250px;
     padding: 0 0 0 40px; }
-    .branding__nav--right a:link, .branding__nav--right a:visited, .branding__nav--right a:hover, .branding__nav--right a:active {
+    .branding__nav--left a:link, .branding__nav--left a:visited, .branding__nav--left a:hover, .branding__nav--left a:active {
       text-decoration: none;
       color: white; }
 
-.branding__nav--left {
+.branding__nav--right {
   display: flex;
-  justify-content: flex-end; }
-  .branding__nav--left ul {
+  justify-content: flex-end;
+  margin-top: -1rem; }
+  .branding__nav--right ul {
     float: left;
     list-style-type: none;
     margin: 0;
     padding: 30px; }
-    .branding__nav--left ul li {
+    .branding__nav--right ul li {
       float: left;
       padding-left: 30px; }
-      .branding__nav--left ul li a {
+      .branding__nav--right ul li a {
         display: block;
         color: white;
         padding: 10px 45px;
         font-size: 1.6em;
         font-weight: bolder; }
-        .branding__nav--left ul li a:link, .branding__nav--left ul li a:visited, .branding__nav--left ul li a:hover, .branding__nav--left ul li a:active {
+        .branding__nav--right ul li a:link, .branding__nav--right ul li a:visited, .branding__nav--right ul li a:hover, .branding__nav--right ul li a:active {
           text-decoration: none; }
 
 .branding__nav--decor-button {
@@ -67,7 +75,7 @@
   border: 3px solid white;
   border-radius: 60px;
   display: inline-block;
-  margin: 1.8em 1.3em 0 5em;
+  margin: 1.8em 1.3em 0 10rem;
   color: white;
   padding: 10px 45px;
   font-size: 1.6em;
@@ -128,12 +136,52 @@ ul {
 .cards__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 30%; }
-  .cards__card:hover {
-    border-bottom: 5px solid #3b013b; }
+  justify-content: space-between;
+  overflow: hidden;
+  border-bottom: 5px solid lightgray;
+  margin: 5rem 5rem; }
+  .cards__card div {
+    position: relative; }
+    .cards__card div .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: rgba(59, 1, 59, 0.8); }
+  .cards__card h2 {
+    width: 90%;
+    color: #3b013b;
+    font-weight: bold;
+    padding: 1.5rem; }
   .cards__card p {
     width: 90%;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    padding: 1.5rem; }
+  .cards__card .card__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .cards__card a {
+    display: block;
+    color: white;
+    background-color: #E8B100;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    padding: 10px 45px;
+    font-size: 1.6em;
+    font-weight: bolder; }
+    .cards__card a:link, .cards__card a:visited, .cards__card a:hover, .cards__card a:active {
+      text-decoration: none;
+      color: white; }
+  .cards__card:hover {
+    border-bottom: 5px solid #3b013b; }
+    .cards__card:hover .overlay {
+      opacity: 0.8; }
 
 /*# sourceMappingURL=style.css.map */
