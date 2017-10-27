@@ -1,4 +1,4 @@
-@import vars, branding, navigation, cards
+@import vars, branding, navigation, cards, advantages
 
 body
   display: flex
@@ -13,34 +13,14 @@ ul
   li 
     float: left
 
-.advantages
-  display: flex
-  justify-content: space-around
-  position: relative
-  width: 100%
-  height: 80vh
-  overflow: hidden
-  background: linear-gradient(to right, rgba(59, 1, 59,1) 30%, rgba(59, 1, 59,0.01))
+
+
+.feedback
+  margin-top: 10rem
   h1
-    color: white
-    position: absolute
-    margin-left: -50rem
+    color: $purple
+    margin-left: 8rem
     font-size: 5rem
-  div
-    z-index: -1
-    overflow: hidden
-  img
-    width: 100%
-    height: 100%
-    object-fit: cover
-  .img--left
-    width: 80%
-    img
-      position: absolute
-      right: 50%
-  .img--right
-    img
-      width: 120%
     
 
 

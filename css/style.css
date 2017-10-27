@@ -175,32 +175,20 @@
     .cards__card:hover .overlay {
       opacity: 0.8; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 30px; }
-  ul li {
-    float: left; }
-
 .advantages {
   display: flex;
   justify-content: space-around;
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   background: linear-gradient(to right, #3b013b 30%, rgba(59, 1, 59, 0.01)); }
   .advantages h1 {
     color: white;
     position: absolute;
-    margin-left: -50rem;
-    font-size: 5rem; }
+    margin-left: -53rem;
+    font-size: 5rem;
+    margin-top: 7rem; }
   .advantages div {
     z-index: -1;
     overflow: hidden; }
@@ -215,5 +203,56 @@ ul {
       right: 50%; }
   .advantages .img--right img {
     width: 120%; }
+  .advantages .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 15rem 15rem 3rem -25rem;
+    width: 70%;
+    z-index: 2; }
+    .advantages .icons .icon {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 5rem 3rem; }
+      .advantages .icons .icon .text {
+        color: white;
+        width: 60%;
+        height: 100%; }
+        .advantages .icons .icon .text p {
+          font-size: 1.7rem; }
+      .advantages .icons .icon div {
+        width: 80px;
+        height: 80px;
+        margin-right: 3rem; }
+        .advantages .icons .icon div img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px; }
+  ul li {
+    float: left; }
+
+.feedback {
+  margin-top: 10rem; }
+  .feedback h1 {
+    color: #3b013b;
+    margin-left: 8rem;
+    font-size: 5rem; }
 
 /*# sourceMappingURL=style.css.map */
