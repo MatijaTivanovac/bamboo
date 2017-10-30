@@ -324,19 +324,6 @@
       font-size: 5rem;
       color: white; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 30px; }
-  ul li {
-    float: left; }
-
 .partners {
   display: flex;
   flex-direction: row;
@@ -352,5 +339,18 @@ ul {
     height: 130px;
     object-fit: scale-down;
     opacity: 0.5; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px; }
+  ul li {
+    float: left; }
 
 /*# sourceMappingURL=style.css.map */
