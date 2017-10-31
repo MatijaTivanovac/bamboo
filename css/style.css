@@ -372,28 +372,6 @@
     border: none;
     background-color: white; }
 
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 30px; }
-  ul li {
-    float: left; }
-
-i {
-  border: solid #E8B100;
-  border-width: 0 7px 7px 0;
-  display: inline-block;
-  padding: 10px; }
-
-.rightarrow {
-  transform: rotate(-45deg); }
-
 .social {
   color: white;
   display: flex;
@@ -489,5 +467,27 @@ i {
       padding: 3em; }
       .social .social__cards .login a {
         padding: 0.5em 2em; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px; }
+  ul li {
+    float: left; }
+
+i {
+  border: solid #E8B100;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 10px; }
+
+.rightarrow {
+  transform: rotate(-45deg); }
 
 /*# sourceMappingURL=style.css.map */
