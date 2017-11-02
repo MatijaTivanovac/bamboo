@@ -468,6 +468,83 @@
       .social .social__cards .login a {
         padding: 0.5em 2em; }
 
+.end-nav {
+  background-color: #3b013b;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  color: white;
+  padding: 3em 0 0 2em; }
+  .end-nav h4 {
+    font-weight: bold; }
+  .end-nav p {
+    font-size: 1.25em;
+    line-height: 1.7em; }
+  .end-nav a {
+    color: white;
+    font-size: 1.25em; }
+    .end-nav a:link, .end-nav a:visited, .end-nav a:hover, .end-nav a:active {
+      text-decoration: none;
+      color: white; }
+  .end-nav .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 5em 5em 1em 5em;
+    width: 20%; }
+    .end-nav .content div {
+      margin: 2em 0 1em 0.5em; }
+  .end-nav .newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 5em 20em 1em 15em;
+    width: 20%; }
+    .end-nav .newsletter div {
+      margin: 2em 2em 2em 0; }
+  .end-nav form {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    padding: 0.5rem 8rem 0.5rem 2rem;
+    margin-left: -1em;
+    width: 100%;
+    background-color: white; }
+  .end-nav .txt {
+    flex-grow: 15;
+    border: none;
+    color: black;
+    font-size: 2.5rem;
+    margin-right: 6rem; }
+  .end-nav .arrowbtn {
+    flex-grow: 1;
+    margin: 1.2rem -4rem 0.5rem 0;
+    border: none;
+    background-color: white; }
+  .end-nav .branding-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0; }
+    .end-nav .branding-end div {
+      margin: 1.5em 0 1em 1.5em;
+      vertical-align: text-top; }
+    .end-nav .branding-end h4 {
+      font-weight: normal; }
+  .end-nav .business-insider {
+    font-weight: bold;
+    font-size: 1.3em; }
+  .end-nav .branding-end__logo {
+    width: 240px;
+    height: 60px;
+    margin-top: -2rem;
+    margin-left: -4rem; }
+
 body {
   display: flex;
   flex-direction: column;
@@ -489,5 +566,11 @@ i {
 
 .rightarrow {
   transform: rotate(-45deg); }
+
+footer {
+  text-align: center;
+  background-color: #290129;
+  color: white;
+  padding: 1.1em 0 1.1em 0; }
 
 /*# sourceMappingURL=style.css.map */
