@@ -43,24 +43,42 @@
     float: left;
     list-style-type: none;
     margin: 0;
-    padding: 30px; }
+    padding: 30px;
+    padding-top: 6rem; }
     .branding__nav--right ul li {
       float: left;
-      padding-left: 30px; }
+      padding-left: 5em; }
       .branding__nav--right ul li a {
-        display: block;
+        display: inline-block;
+        position: relative;
         color: white;
-        padding: 10px 45px;
+        overflow: hidden;
         font-size: 1.6em;
         font-weight: bolder; }
         .branding__nav--right ul li a:link, .branding__nav--right ul li a:visited, .branding__nav--right ul li a:hover, .branding__nav--right ul li a:active {
-          text-decoration: none; }
-
-.branding__nav--decor-button {
-  background-color: #E8B100;
-  border: none;
-  border-radius: 60px;
-  cursor: pointer; }
+          text-decoration: none;
+          color: white; }
+      .branding__nav--right ul li a:after {
+        content: "" attr(data-hover-label) "";
+        width: 0;
+        color: #E8B100;
+        overflow: hidden;
+        transition: width 0.4s ease-out;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .branding__nav--right ul li a:hover:after, .branding__nav--right ul li a:focus:after {
+        width: 100%; }
+      .branding__nav--right ul li .branding__nav--decor-button {
+        border: 3px solid #E8B100;
+        padding: 10px 45px;
+        margin-top: -0.5em;
+        border-radius: 60px;
+        cursor: pointer;
+        transition: all 0.5s; }
+        .branding__nav--right ul li .branding__nav--decor-button:hover {
+          background-color: #E8B100;
+          color: black; }
 
 .branding__text {
   width: 38%;
@@ -79,19 +97,25 @@
   color: white;
   padding: 10px 45px;
   font-size: 1.6em;
-  font-weight: bolder; }
+  font-weight: bolder;
+  transition: all 0.5s; }
+  .branding__btn:hover {
+    color: black;
+    background-color: white; }
   .branding__btn:link, .branding__btn:visited, .branding__btn:hover, .branding__btn:active {
-    text-decoration: none;
-    color: white; }
+    text-decoration: none; }
 
 .branding__btn--color {
-  background-color: #E8B100;
+  margin: 1.8em 1.3em 0 10rem;
+  color: white;
+  font-size: 1.6em;
+  font-weight: bolder;
+  padding: 10px 45px;
   display: inline-block;
   margin-left: 1.2em;
-  border: none;
-  border-radius: 60px;
-  padding: 15px 70px;
-  cursor: pointer; }
+  padding: 10px 70px; }
+  .branding__btn--color:link, .branding__btn--color:visited, .branding__btn--color:hover, .branding__btn--color:active {
+    text-decoration: none; }
 
 .navigation {
   border-bottom: 3px solid lightgray;
@@ -109,7 +133,8 @@
         text-transform: uppercase;
         padding: 10px;
         color: lightgray;
-        text-decoration: none; }
+        text-decoration: none;
+        transition: all 0.5s; }
         .navigation ul li a:hover {
           color: #3b013b;
           border-bottom: 5px solid #3b013b; }
@@ -117,7 +142,8 @@
 .cards {
   display: flex;
   justify-content: space-around;
-  margin: 5rem 0;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   width: 100%; }
 
 .cards__card {
@@ -159,17 +185,13 @@
     justify-content: space-around; }
   .cards__card a {
     display: block;
-    color: white;
-    background-color: #E8B100;
-    border: none;
-    border-radius: 60px;
-    cursor: pointer;
+    color: black;
     padding: 10px 45px;
     font-size: 1.6em;
     font-weight: bolder; }
     .cards__card a:link, .cards__card a:visited, .cards__card a:hover, .cards__card a:active {
       text-decoration: none;
-      color: white; }
+      color: black; }
   .cards__card:hover {
     border-bottom: 5px solid #3b013b; }
     .cards__card:hover .overlay {
@@ -341,7 +363,9 @@
     width: 130px;
     height: 130px;
     object-fit: scale-down;
-    opacity: 0.5; }
+    opacity: 0.3; }
+    .partners img:hover {
+      opacity: 1; }
 
 .subscribe {
   display: flex;
@@ -453,10 +477,13 @@
       padding: 0.6em 0 0.6em 0;
       margin: 0.2em 14em 1.5em 0;
       font-size: 1.6em;
-      font-weight: bolder; }
+      font-weight: bolder;
+      transition: all 0.5s; }
+      .social .social__cards a:hover {
+        color: black;
+        background-color: white; }
       .social .social__cards a:link, .social .social__cards a:visited, .social .social__cards a:hover, .social .social__cards a:active {
-        text-decoration: none;
-        color: white; }
+        text-decoration: none; }
     .social .social__cards .register {
       background-color: rgba(232, 177, 0, 0.8);
       margin-right: 2em;
@@ -483,11 +510,25 @@
     font-size: 1.25em;
     line-height: 1.7em; }
   .end-nav a {
+    position: relative;
+    display: inline-block;
     color: white;
-    font-size: 1.25em; }
+    font-size: 1.25em;
+    overflow: hidden; }
     .end-nav a:link, .end-nav a:visited, .end-nav a:hover, .end-nav a:active {
       text-decoration: none;
       color: white; }
+  .end-nav a:after {
+    content: "" attr(data-hover-label) "";
+    width: 0;
+    color: #E8B100;
+    overflow: hidden;
+    transition: width 0.4s ease-out;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .end-nav a:hover:after, .end-nav a:focus:after {
+    width: 100%; }
   .end-nav .content {
     display: flex;
     flex-direction: column;
@@ -529,8 +570,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    margin-right: 0; }
+    align-items: center; }
     .end-nav .branding-end div {
       margin: 1.5em 0 1em 1.5em;
       vertical-align: text-top; }
@@ -541,9 +581,11 @@
     font-size: 1.3em; }
   .end-nav .branding-end__logo {
     width: 240px;
-    height: 60px;
-    margin-top: -2rem;
-    margin-left: -4rem; }
+    height: 60px; }
+    .end-nav .branding-end__logo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 body {
   display: flex;
@@ -566,6 +608,18 @@ i {
 
 .rightarrow {
   transform: rotate(-45deg); }
+
+button, .branding__btn--color, .cards__card a {
+  border: 3px solid #E8B100;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.5s; }
+  button:hover, .branding__btn--color:hover, .cards__card a:hover {
+    background-color: #E8B100;
+    color: black; }
+
+input:focus {
+  outline: none; }
 
 footer {
   text-align: center;
