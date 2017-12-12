@@ -15,6 +15,9 @@
   align-items: center
   flex-wrap: wrap
 
+  +breakpoint($medium + 39)
+    flex-direction: column
+
 .branding__logo
   width: 300px
   height: 80px
@@ -25,12 +28,28 @@
   display: flex
   justify-content: space-between
   align-items: center
+  ul
+    +breakpoint($large)
+      padding-bottom: 0
+    +breakpoint($medium + 39)
+      display: flex
+      flex-direction: column
+      justify-content: center
+  li
+    +breakpoint($medium + 39)
+      padding: 0
   a
     color: white
     font-size: 1.6em
     font-weight: bolder
-    line-height: 250px
+    line-height: 390px
     padding: 0 0 0 40px
+
+    +breakpoint($medium + 39)
+      line-height: 100px
+    +breakpoint($large)
+      line-height: 100px
+
     &:link, &:visited, &:hover, &:active
       text-decoration: none
       color: white
@@ -39,15 +58,45 @@
   display: flex
   justify-content: flex-end
   margin-top: -1rem
+
+  +breakpoint($medium + 39)
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    // margin-left: 5em
   ul
     float: left
     list-style-type: none
     margin: 0
     padding: 30px
     padding-top: 6rem
+
+    +breakpoint($medium + 39)
+      float: none
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      flex-wrap: wrap
+
+    +breakpoint($large)
+      padding-top: 2rem
+      padding-left: 0
+      padding-right: 0
     li 
       float: left
       padding-left: 5em
+
+      +breakpoint($medium + 39)
+        float: none
+
+      &:last-child
+        +breakpoint($medium + 11)
+          padding-top: 1.5em
+          // margin-left: 8.5em
+
+      +breakpoint($large)
+        padding-left: 3em
       a
         display: inline-block
         position: relative
@@ -77,6 +126,8 @@
         border-radius: 60px
         cursor: pointer
         transition: all 0.5s
+        +breakpoint($medium + 39)
+          padding: 10px 30px
         &:hover
           background-color: $yellow
           color: black

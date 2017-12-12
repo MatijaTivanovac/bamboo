@@ -3,3 +3,10 @@ $yellow: #E8B100
 $blue: #174EFF
 $yellow-dark: #EABA26
 $purple-dark: #290129
+$small: 0
+$medium: 639px
+$large: 1023px
+
+=breakpoint($name)
+  @media only screen and (max-width:$name)
+    @content
