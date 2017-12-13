@@ -494,7 +494,7 @@
         .social .social__followus .social__logos div img {
           width: 100%;
           height: 100%;
-          object-fit: cover; }
+          object-fit: scale-down; }
   .social .social__cards {
     display: flex;
     flex-direction: row;
