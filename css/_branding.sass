@@ -31,6 +31,8 @@
   ul
     +breakpoint($large)
       padding-bottom: 0
+    +breakpoint($xxlarge)
+      padding-bottom: 0
     +breakpoint($medium + 39)
       display: flex
       flex-direction: column
@@ -42,12 +44,15 @@
     color: white
     font-size: 1.6em
     font-weight: bolder
-    line-height: 390px
+    line-height: 250px
     padding: 0 0 0 40px
 
     +breakpoint($medium + 39)
       line-height: 100px
+      font-size: 1.2em
     +breakpoint($large)
+      line-height: 100px
+    +breakpoint($xxlarge)
       line-height: 100px
 
     &:link, &:visited, &:hover, &:active
@@ -94,6 +99,10 @@
         +breakpoint($medium + 11)
           padding-top: 1.5em
           // margin-left: 8.5em
+        +breakpoint($medium + 20)
+          padding-top: 0
+        +breakpoint($medium - 80)
+          padding-top: 1.5em
 
       +breakpoint($large)
         padding-left: 3em
@@ -105,6 +114,8 @@
         // padding: 10px 45px
         font-size: 1.6em
         font-weight: bolder
+        +breakpoint($medium + 39)
+          font-size: 1.2em
         &:link, &:visited, &:hover, &:active
           text-decoration: none
           color: white
@@ -150,6 +161,17 @@
     text-align: left
     font-size: 5rem
     line-height: 1.4
+    +fluid-type($medium, $wide, $minFont1, $maxFont1)
+    +breakpoint($medium + 40)
+      width: 70vw
+    +breakpoint($medium + 400)
+      width: 60vw
+    +breakpoint($medium - 100)
+      width: 90vw
+
+.branding__btns
+  +breakpoint($medium + 130)
+    margin-bottom: 1.2em
 
 .branding__btn
   border: 3px solid white
@@ -161,6 +183,16 @@
   font-size: 1.6em
   font-weight: bolder
   transition: all 0.5s
+  +breakpoint($xlarge)
+    padding: 10px 30px
+  +breakpoint($medium + 130)
+    margin-left: 0
+    margin-right: 0.8em
+    margin-bottom: 1.2em
+  +breakpoint($medium + 39)
+    font-size: 1.2em
+  +breakpoint($medium - 100)
+    margin-bottom: 0.5em
   &:hover
     color: black
     background-color: white
@@ -177,5 +209,13 @@
   display: inline-block
   margin-left: 1.2em
   padding: 10px 70px
+  +breakpoint($xlarge)
+    padding: 10px 30px
+  +breakpoint($medium + 130)
+    margin-left: 2rem
+    margin-right: 0.8em
+    margin-bottom: 1.2em
+  +breakpoint($medium + 39)
+    font-size: 1.2em
   &:link, &:visited, &:hover, &:active
     text-decoration: none

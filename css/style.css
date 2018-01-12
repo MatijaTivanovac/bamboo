@@ -1,3 +1,43 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px; }
+  ul li {
+    float: left; }
+
+i {
+  border: solid #E8B100;
+  border-width: 0 7px 7px 0;
+  display: inline-block;
+  padding: 10px; }
+
+.rightarrow {
+  transform: rotate(-45deg); }
+
+button, .branding__btn--color, .cards__card a {
+  border: 3px solid #E8B100;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.5s; }
+  button:hover, .branding__btn--color:hover, .cards__card a:hover {
+    background-color: #E8B100;
+    color: black; }
+
+input:focus {
+  outline: none; }
+
+footer {
+  text-align: center;
+  background-color: #290129;
+  color: white;
+  padding: 1.1em 0 1.1em 0; }
+
 .branding {
   width: 100%;
   height: 100vh;
@@ -31,6 +71,9 @@
   @media only screen and (max-width: 1023px) {
     .branding__nav--left ul {
       padding-bottom: 0; } }
+  @media only screen and (max-width: 1439px) {
+    .branding__nav--left ul {
+      padding-bottom: 0; } }
   @media only screen and (max-width: 678px) {
     .branding__nav--left ul {
       display: flex;
@@ -43,12 +86,16 @@
     color: white;
     font-size: 1.6em;
     font-weight: bolder;
-    line-height: 390px;
+    line-height: 250px;
     padding: 0 0 0 40px; }
     @media only screen and (max-width: 678px) {
       .branding__nav--left a {
-        line-height: 100px; } }
+        line-height: 100px;
+        font-size: 1.2em; } }
     @media only screen and (max-width: 1023px) {
+      .branding__nav--left a {
+        line-height: 100px; } }
+    @media only screen and (max-width: 1439px) {
       .branding__nav--left a {
         line-height: 100px; } }
     .branding__nav--left a:link, .branding__nav--left a:visited, .branding__nav--left a:hover, .branding__nav--left a:active {
@@ -92,6 +139,12 @@
       @media only screen and (max-width: 650px) {
         .branding__nav--right ul li:last-child {
           padding-top: 1.5em; } }
+      @media only screen and (max-width: 659px) {
+        .branding__nav--right ul li:last-child {
+          padding-top: 0; } }
+      @media only screen and (max-width: 559px) {
+        .branding__nav--right ul li:last-child {
+          padding-top: 1.5em; } }
       @media only screen and (max-width: 1023px) {
         .branding__nav--right ul li {
           padding-left: 3em; } }
@@ -102,6 +155,9 @@
         overflow: hidden;
         font-size: 1.6em;
         font-weight: bolder; }
+        @media only screen and (max-width: 678px) {
+          .branding__nav--right ul li a {
+            font-size: 1.2em; } }
         .branding__nav--right ul li a:link, .branding__nav--right ul li a:visited, .branding__nav--right ul li a:hover, .branding__nav--right ul li a:active {
           text-decoration: none;
           color: white; }
@@ -138,6 +194,27 @@
     text-align: left;
     font-size: 5rem;
     line-height: 1.4; }
+    .branding__text h1 {
+      font-size: 25px; }
+      @media screen and (min-width: 639px) {
+        .branding__text h1 {
+          font-size: calc(25px + 25 * ((100vw - 639px) / 1280)); } }
+      @media screen and (min-width: 1919px) {
+        .branding__text h1 {
+          font-size: 50px; } }
+    @media only screen and (max-width: 679px) {
+      .branding__text h1 {
+        width: 70vw; } }
+    @media only screen and (max-width: 1039px) {
+      .branding__text h1 {
+        width: 60vw; } }
+    @media only screen and (max-width: 539px) {
+      .branding__text h1 {
+        width: 90vw; } }
+
+@media only screen and (max-width: 769px) {
+  .branding__btns {
+    margin-bottom: 1.2em; } }
 
 .branding__btn {
   border: 3px solid white;
@@ -149,6 +226,20 @@
   font-size: 1.6em;
   font-weight: bolder;
   transition: all 0.5s; }
+  @media only screen and (max-width: 1199px) {
+    .branding__btn {
+      padding: 10px 30px; } }
+  @media only screen and (max-width: 769px) {
+    .branding__btn {
+      margin-left: 0;
+      margin-right: 0.8em;
+      margin-bottom: 1.2em; } }
+  @media only screen and (max-width: 678px) {
+    .branding__btn {
+      font-size: 1.2em; } }
+  @media only screen and (max-width: 539px) {
+    .branding__btn {
+      margin-bottom: 0.5em; } }
   .branding__btn:hover {
     color: black;
     background-color: white; }
@@ -164,19 +255,51 @@
   display: inline-block;
   margin-left: 1.2em;
   padding: 10px 70px; }
+  @media only screen and (max-width: 1199px) {
+    .branding__btn--color {
+      padding: 10px 30px; } }
+  @media only screen and (max-width: 769px) {
+    .branding__btn--color {
+      margin-left: 2rem;
+      margin-right: 0.8em;
+      margin-bottom: 1.2em; } }
+  @media only screen and (max-width: 678px) {
+    .branding__btn--color {
+      font-size: 1.2em; } }
   .branding__btn--color:link, .branding__btn--color:visited, .branding__btn--color:hover, .branding__btn--color:active {
     text-decoration: none; }
 
 .navigation {
   border-bottom: 3px solid lightgray;
   padding-bottom: 2.3em; }
+  @media only screen and (max-width: 939px) {
+    .navigation {
+      padding-bottom: 1.6em; } }
+  @media only screen and (max-width: 679px) {
+    .navigation {
+      border-bottom: none; } }
   .navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 30px; }
+    @media only screen and (max-width: 839px) {
+      .navigation ul {
+        margin-left: -1.3em; } }
+    @media only screen and (max-width: 679px) {
+      .navigation ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
     .navigation ul li {
       float: left;
       padding-left: 50px; }
+      @media only screen and (max-width: 1199px) {
+        .navigation ul li {
+          padding-left: 20px; } }
+      @media only screen and (max-width: 939px) {
+        .navigation ul li {
+          padding-left: 0;
+          font-size: 80%; } }
       .navigation ul li a {
         display: block;
         font-size: 2em;
@@ -185,6 +308,9 @@
         color: lightgray;
         text-decoration: none;
         transition: all 0.5s; }
+        @media only screen and (max-width: 679px) {
+          .navigation ul li a {
+            border-bottom: 3px solid lightgray; } }
         .navigation ul li a:hover {
           color: #3b013b;
           border-bottom: 5px solid #3b013b; }
@@ -195,6 +321,11 @@
   margin-top: 5rem;
   margin-bottom: 5rem;
   width: 100%; }
+  @media only screen and (max-width: 1199px) {
+    .cards {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; } }
 
 .cards__card {
   display: flex;
@@ -203,10 +334,30 @@
   overflow: hidden;
   border-bottom: 5px solid lightgray;
   margin: 10rem 2rem; }
+  @media only screen and (max-width: 1199px) {
+    .cards__card {
+      align-items: center;
+      width: 70vw;
+      margin-bottom: 5rem; } }
   .cards__card:first-child {
     margin-left: 8rem; }
+    @media only screen and (max-width: 1199px) {
+      .cards__card:first-child {
+        margin-left: 0; } }
   .cards__card:last-child {
     margin-right: 8rem; }
+    @media only screen and (max-width: 1199px) {
+      .cards__card:last-child {
+        margin-right: 0; } }
+  @media only screen and (max-width: 1199px) {
+    .cards__card .image {
+      width: 500px;
+      height: 333px; } }
+  @media only screen and (max-width: 1199px) {
+    .cards__card .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; } }
   .cards__card div {
     position: relative; }
     .cards__card div .overlay {
@@ -225,10 +376,18 @@
     color: #3b013b;
     font-weight: bold;
     padding: 1.5rem; }
+    @media only screen and (max-width: 1023px) {
+      .cards__card h2 {
+        padding-bottom: 0;
+        padding-top: 1rem;
+        text-align: center; } }
   .cards__card p {
     width: 90%;
     font-size: 1.5em;
     padding: 1.5rem; }
+    @media only screen and (max-width: 1023px) {
+      .cards__card p {
+        text-align: center; } }
   .cards__card .card__footer {
     display: flex;
     align-items: center;
@@ -239,6 +398,12 @@
     padding: 10px 45px;
     font-size: 1.6em;
     font-weight: bolder; }
+    @media only screen and (max-width: 1199px) {
+      .cards__card a {
+        padding: 10px 30px; } }
+    @media only screen and (max-width: 1073px) {
+      .cards__card a {
+        font-size: 1.2em; } }
     .cards__card a:link, .cards__card a:visited, .cards__card a:hover, .cards__card a:active {
       text-decoration: none;
       color: black; }
@@ -318,9 +483,17 @@
     flex-direction: row;
     justify-content: space-around;
     margin: 10rem 5rem 8rem 5rem; }
+    @media only screen and (max-width: 1023px) {
+      .feedback .feedback__cards {
+        flex-direction: column;
+        align-items: center; } }
     .feedback .feedback__cards .feedback__card {
       display: flex;
       flex-direction: column; }
+      @media only screen and (max-width: 1023px) {
+        .feedback .feedback__cards .feedback__card {
+          width: 60vw;
+          margin-bottom: 3rem; } }
       .feedback .feedback__cards .feedback__card h2 {
         color: #3b013b;
         font-weight: bold; }
@@ -333,6 +506,9 @@
         color: grey;
         font-style: italic;
         font-weight: bold; }
+        @media only screen and (max-width: 1023px) {
+          .feedback .feedback__cards .feedback__card .feedback__quote {
+            margin-top: 0.5em; } }
       .feedback .feedback__cards .feedback__card .feedback__avatar {
         display: flex;
         flex-direction: row;
@@ -359,6 +535,9 @@
           transform: scale(-1, -1);
           filter: invert(100%);
           background-color: #174EFF; }
+          @media only screen and (max-width: 1023px) {
+            .feedback .feedback__cards .feedback__card .feedback__quote-img img {
+              margin-right: 4em; } }
 
 .reasons {
   display: flex; }
@@ -406,9 +585,31 @@
   flex-wrap: wrap;
   margin-left: 30rem;
   margin-right: 30rem; }
+  @media only screen and (max-width: 1719px) {
+    .partners {
+      margin-left: 25rem;
+      margin-right: 25rem; } }
+  @media only screen and (max-width: 1519px) {
+    .partners {
+      margin-left: 20rem;
+      margin-right: 20rem; } }
+  @media only screen and (max-width: 1439px) {
+    .partners {
+      margin-left: 10rem;
+      margin-right: 10rem; } }
+  @media only screen and (max-width: 1299px) {
+    .partners {
+      margin-left: 5rem;
+      margin-right: 5rem; } }
+  @media only screen and (max-width: 739px) {
+    .partners {
+      margin-bottom: 0; } }
   .partners div {
     margin: 0 3rem 0.1rem 3rem;
     padding: 1rem 3rem 3rem 3rem; }
+    @media only screen and (max-width: 739px) {
+      .partners div {
+        padding-bottom: 0.5rem; } }
   .partners img {
     width: 130px;
     height: 130px;
@@ -636,45 +837,5 @@
       width: 100%;
       height: 100%;
       object-fit: cover; }
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0; }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 30px; }
-  ul li {
-    float: left; }
-
-i {
-  border: solid #E8B100;
-  border-width: 0 7px 7px 0;
-  display: inline-block;
-  padding: 10px; }
-
-.rightarrow {
-  transform: rotate(-45deg); }
-
-button, .branding__btn--color, .cards__card a {
-  border: 3px solid #E8B100;
-  border-radius: 60px;
-  cursor: pointer;
-  transition: all 0.5s; }
-  button:hover, .branding__btn--color:hover, .cards__card a:hover {
-    background-color: #E8B100;
-    color: black; }
-
-input:focus {
-  outline: none; }
-
-footer {
-  text-align: center;
-  background-color: #290129;
-  color: white;
-  padding: 1.1em 0 1.1em 0; }
 
 /*# sourceMappingURL=style.css.map */
